@@ -30,6 +30,7 @@ cashDenom.addEventListener("submit", (e) => {
         console.log(typeof(cash) + (typeof(billAmt)))
         console.log(billAmt)
         console.log(cash)
+        document.getElementById("paid").innerHTML = cash
         var bal = (cash-billAmt)
         console.log(bal)
         if(cash < billAmt){
