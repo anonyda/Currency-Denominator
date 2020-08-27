@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Denomination Manager</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+</head>
+<body>
+   <div class="container">
+       <div class="background">
+           <div class="money">
+                <h2>Your Money<br><br></h2>
+                <form id="cashDenom">
+                    <div class="field">
+                        <label for="note2k">2000 Notes</label>
+                        <input type="number" value="0" id="note2k" name="note2k" placeholder="0"><br>
+                    </div>
+                    <div class="field">
+                        <label for="note2k">500 Notes</label>
+                        <input type="number" value="0" id="note500" name="note500" placeholder="0"><br>
+                    </div>  
+                    <div class="field">
+                        <label for="note2k">200 Notes </label>
+                        <input type="number" value="0" id="note200" name="note200" placeholder="0"><br>
+                    </div>
+                    <div class="field">
+                        <label for="note2k">100 Notes </label>
+                        <input type="number" value="0" id="note100" name="note100" placeholder="0"><br>
+                    </div>
+                    <div class="field">
+                        <label for="note2k">50 Notes  </label>
+                        <input type="number" value="0" id="note50" name="note50" placeholder="0"><br>
+                    </div>
+                    <div class="field">
+                        <label for="note2k">20 Notes  </label>
+                        <input type="number" value="0" id="note20" name="note20" placeholder="0"><br>
+                    </div>
+                    <div class="field">
+                        <label for="note2k">10 Notes  </label>
+                        <input type="number" value="0" id="note10" name="note10" placeholder="0"><br>
+                    </div>
+                    <div class="field">
+                        <label for="note2k">5 Coins   </label>
+                        <input type="number" value="0" id="note5" name="note5" placeholder="0"><br>
+                    </div>
+                    <div class="field">
+                        <label for="note2k">2 Coins   </label>
+                        <input type="number" value="0" id="note2" name="note2" placeholder="0"><br>
+                    </div>
+                    <div class="field">
+                        <label for="note2k">1 Coin   </label>
+                        <input type="number" value="0" id="note1" name="note1" placeholder="0"><br>
+                    </div>
+                        <input type="submit" value="Pay" onclick="clearChange();"></input> 
+                </form>
+                <h2 id="paid">  </h2>
+           </div>
+           <div class="bill">
+            <h2>Your Bill<br></h2>
+            <h3 id="billAmt"><br><br></h3> 
+            <h2>Your Balance<br></h2>
+            <h3 id="balAmt"><br><br></h3> 
+            <h2>Your Change<br></h2>
+            <h3 id="change"><br></h3> 
+           </div>
+       </div>
+   </div> 
+   <script src="./script.js"></script>
+</body>
+</html>
