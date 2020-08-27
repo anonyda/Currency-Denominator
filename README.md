@@ -12,6 +12,8 @@ Hosted on Github Pages
 This app uses the Greedy Approach to return the least number of notes and coins to be returned. We are starting from the largest possible denomination and keep going till our balance is 0.
 This reduces the total number of coins and notes required.
 
+The bill amount is generated at random.
+
 Below is the code responsible for it:
 
 ```javascript
